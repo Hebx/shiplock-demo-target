@@ -1,0 +1,15 @@
+{
+  "name": "shiplock-demo-target",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Disposable demo target for ShipLock SHA-guarded merges. Safe to delete.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "5.6.3"
+  }
+}
