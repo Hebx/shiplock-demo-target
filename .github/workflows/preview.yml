@@ -1,0 +1,13 @@
+# DEMO ONLY: intentionally risky patterns for the ShipLock block path. Never merge.
+name: preview
+
+on: pull_request_target
+
+permissions: write-all
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo PR title
+        run: echo "${{ github.event.pull_request.title }}"
